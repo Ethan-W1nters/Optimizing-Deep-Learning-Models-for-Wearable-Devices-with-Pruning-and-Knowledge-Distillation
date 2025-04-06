@@ -171,7 +171,7 @@ print(f"Accuracy change: {pretrained_acc:.4f} → {pruned_acc:.4f}")
 
 When we use `tp.importance.TaylorImportance()` to perform pruning, we can get the results shown in the figure below.
 
-<img src="file:///C:/Users/22736/OneDrive/Desktop/图片1.png" title="" alt="图片1.png" data-align="center">
+<img src="https://github.com/Ethan-W1nters/Optimizing-Deep-Learning-Models-for-Wearable-Devices-with-Pruning-and-Knowledge-Distillation/blob/main/image/%E5%9B%BE%E7%89%871.png" title="" alt="图片1.png" data-align="center">
 
 The results show that the parameters of the model `resnet18` have been reduced from `2,598` to `1,494`, and the MACs have been reduced from `676,170.0` to `357,801`, which has also dropped by almost half. The accuracy has even increased by `0.01%`, from `96.16%` to `96.17%`.
 
@@ -179,7 +179,7 @@ To further verify the effect of pruning, we can conduct further experiments. Thi
 
 
 
-<img title="" src="file:///C:/Users/22736/OneDrive/Desktop/图片2.png" alt="图片2.png" data-align="center">
+<img title="" src="https://github.com/Ethan-W1nters/Optimizing-Deep-Learning-Models-for-Wearable-Devices-with-Pruning-and-Knowledge-Distillation/blob/main/image/%E5%9B%BE%E7%89%872.png" alt="图片2.png" data-align="center">
 
  ---
 
@@ -256,11 +256,11 @@ Here we also conducted two experiments to compare the effects of different knowl
 In the first experiment, we used **VanillaKD** for knowledge distillation, and found that the teacher model had the highest accuracy of `97.03%`, the student model without KD had an accuracy of `95.75%`, and the student model with KD had an accuracy of `96.83%`.
 We can find that using KD has a certain effect on improving the accuracy of the model. Compared with the model without KD, the accuracy is improved by about `1%`, and the accuracy gap with the teacher model is greatly narrowed.
 
-<img src="file:///C:/Users/22736/OneDrive/Desktop/图片3.png" title="" alt="图片3.png" data-align="center">
+<img src="https://github.com/Ethan-W1nters/Optimizing-Deep-Learning-Models-for-Wearable-Devices-with-Pruning-and-Knowledge-Distillation/blob/main/image/%E5%9B%BE%E7%89%873.png" title="" alt="图片3.png" data-align="center">
 
 In the second experiment, we used the **AttentionKD** method to perform knowledge distillation. We found that the teacher model still had the highest accuracy of `96.93%`. However, the student model's performance decreased after knowledge distillation, by about `2%`. This shows that simple knowledge distillation does not always produce better results. Some knowledge distillation methods require strict and complex parameter adjustments to achieve the best results. However, this does not mean that knowledge distillation is ineffective. On the contrary, this proves that the effectiveness of distillation requires more parameters to be coordinated to be effective.
 
-<img src="file:///C:/Users/22736/OneDrive/Desktop/图片4.png" title="" alt="图片4.png" data-align="center">
+<img src="https://github.com/Ethan-W1nters/Optimizing-Deep-Learning-Models-for-Wearable-Devices-with-Pruning-and-Knowledge-Distillation/blob/main/image/%E5%9B%BE%E7%89%874.png" title="" alt="图片4.png" data-align="center">
 
 ---
 
